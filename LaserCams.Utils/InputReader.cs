@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace LaserCams.Utils
 {
-    public class InputReader
+    public class InputReader : IInputReader
     {
         public Tuple<List<Point>, List<Point>> Read(string filePath)
         {

@@ -2,7 +2,7 @@
 
 namespace LaserCams.Utils
 {
-    public class TriangleConverter
+    public class TriangleConverter : ITriangleConverter
     {
         public IEnumerable<Triangle> Convert(List<Point> points)
         {

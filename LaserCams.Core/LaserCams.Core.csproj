@@ -1,12 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp1.1</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\LaserCams.Core\LaserCams.Core.csproj" />
+    <ProjectReference Include="..\LaserCams.Utils\LaserCams.Utils.csproj" />
   </ItemGroup>
 
 </Project>

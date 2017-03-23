@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaserCams.Utils", "LaserCam
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaserCams.Tests", "LaserCams.Tests\LaserCams.Tests.csproj", "{FC74E7E3-D007-41FD-A4CD-252E53057C58}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaserCams.Core", "LaserCams.Core\LaserCams.Core.csproj", "{4046FA72-551D-4757-84BA-9667094F20C0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{FC74E7E3-D007-41FD-A4CD-252E53057C58}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC74E7E3-D007-41FD-A4CD-252E53057C58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC74E7E3-D007-41FD-A4CD-252E53057C58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4046FA72-551D-4757-84BA-9667094F20C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4046FA72-551D-4757-84BA-9667094F20C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4046FA72-551D-4757-84BA-9667094F20C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4046FA72-551D-4757-84BA-9667094F20C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

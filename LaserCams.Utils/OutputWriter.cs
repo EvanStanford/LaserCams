@@ -7,7 +7,7 @@ using System.Linq;
 
 namespace LaserCams.Utils
 {
-    public class OutputWriter
+    public class OutputWriter : IOutputWriter
     {
         public void Write(List<Triangle> triangles, string path)
         {
