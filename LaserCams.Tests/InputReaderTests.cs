@@ -11,7 +11,7 @@ namespace LaserCams.Tests
         public void ReadPositive()
         {
             var reader = new InputReader();
-            var result = reader.Read(@"C:\Dropbox\projects\LaserCams\LaserCams.Tests\Files\star cams.csv"); //required to use absolute paths because .net core is buggy https://github.com/xunit/xunit/issues/978
+            var result = reader.Read(@"C:\Dropbox\projects\LaserCams\LaserCams.Tests\Files\star cams.csv"); //required to use absolute paths because xunit bug https://github.com/xunit/xunit/issues/978
 
             Assert.Equal(result.Item1.Count(), 35);
             Assert.Equal(result.Item2.Count(), 35);
