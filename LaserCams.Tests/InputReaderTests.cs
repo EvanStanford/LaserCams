@@ -1,6 +1,6 @@
 using System;
 using Xunit;
-using LaserCams.Core;
+using LaserCams.Utils;
 using System.Linq;
 
 namespace LaserCams.Tests
@@ -18,6 +18,7 @@ namespace LaserCams.Tests
             float maxExpected = 1000000;
             float minExpected = -1000000;
             Assert.True(result.Item1.All(p => p.X < maxExpected && p.X > minExpected && p.Y < maxExpected && p.Y > minExpected));
+            Assert.True(result.Item1.All(p => p.Z == 0));
         }
     }
 }

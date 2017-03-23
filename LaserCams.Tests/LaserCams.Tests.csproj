@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\LaserCams.Core\LaserCams.Core.csproj" />
+    <ProjectReference Include="..\LaserCams.Utils\LaserCams.Utils.csproj" />
   </ItemGroup>
 
   <ItemGroup>

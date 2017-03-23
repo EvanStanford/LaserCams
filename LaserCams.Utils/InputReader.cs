@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace LaserCams.Core
+namespace LaserCams.Utils
 {
     public class InputReader
     {
@@ -17,16 +17,16 @@ namespace LaserCams.Core
                 rows = csv.GetRecords<InputRow>().ToList();
             }
             return new Tuple<List<Point>, List<Point>>
-                (rows.Select(r => new Point { X = r.X1, Y = r.Y1 }).ToList(),
-                rows.Select(r => new Point { X = r.X2, Y = r.Y2 }).ToList());
+                (rows.Select(r => new Point(r.X1, r.Y1, 0)).ToList(),
+                rows.Select(r => new Point(r.X2, r.Y2, 0)).ToList());
         }
 
         private class InputRow
         {
-            public double X1 { get; set; }
-            public double Y1 { get; set; }
-            public double X2 { get; set; }
-            public double Y2 { get; set; }
+            public float X1 { get; set; }
+            public float Y1 { get; set; }
+            public float X2 { get; set; }
+            public float Y2 { get; set; }
         }
     }
 }

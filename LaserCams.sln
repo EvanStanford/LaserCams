@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LaserCams.App", "LaserCams.App\LaserCams.App.csproj", "{E1E539ED-A248-4347-A5B8-09149D1B2D4C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaserCams.Core", "LaserCams.Core\LaserCams.Core.csproj", "{8F6646C7-0EAE-484E-AE95-A30BB0C8AD64}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaserCams.Utils", "LaserCams.Utils\LaserCams.Utils.csproj", "{8F6646C7-0EAE-484E-AE95-A30BB0C8AD64}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaserCams.Tests", "LaserCams.Tests\LaserCams.Tests.csproj", "{FC74E7E3-D007-41FD-A4CD-252E53057C58}"
 EndProject

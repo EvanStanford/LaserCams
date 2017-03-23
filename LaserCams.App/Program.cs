@@ -6,7 +6,10 @@ namespace LaserCams.App
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Started");
+
+            Console.WriteLine("Completed. Any key to exit.");
+            Console.ReadKey();
         }
     }
 }
