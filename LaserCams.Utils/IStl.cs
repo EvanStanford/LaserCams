@@ -2,7 +2,7 @@
 
 namespace LaserCams.Utils
 {
-    public interface IOutputWriter
+    public interface IStl
     {
         void Write(List<Triangle> triangles, string path);
     }

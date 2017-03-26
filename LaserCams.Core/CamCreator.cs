@@ -8,15 +8,15 @@ namespace LaserCams.Core
     {
         private readonly IInputReader _reader;
         private readonly ITriangleConverter _triangleConverter;
-        private readonly IOutputWriter _writer;
+        private readonly IStl _writer;
         private readonly Config _config;
 
-        public CamCreator(Config config, IInputReader reader = null, ITriangleConverter triangleConverter = null, IOutputWriter writer = null)
+        public CamCreator(Config config, IInputReader reader = null, ITriangleConverter triangleConverter = null, IStl writer = null)
         {
             _config = config;
             _reader = reader ?? new InputReader();
             _triangleConverter = triangleConverter ?? new TriangleConverter();
-            _writer = writer ?? new OutputWriter();
+            _writer = writer ?? new MiliaStl();
         }
 
         public void CreateCams()
