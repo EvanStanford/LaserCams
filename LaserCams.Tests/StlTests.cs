@@ -18,20 +18,20 @@ namespace LaserCams.Tests
                 new Triangle(
                 new Vector(0, 0, -1),
                 new Point(0, 0, 0),
-                new Point(1, 0, 0),
-                new Point(1, 1, 0)
+                new Point(1000, 0, 0),
+                new Point(1000, 1000, 0)
                 ),
                 new Triangle(
                 new Vector(0, -1, 0),
                 new Point(0, 0, 0),
-                new Point(1, 0, 0),
-                new Point(1, 0, 1)
+                new Point(1000, 0, 0),
+                new Point(1000, 0, 1000)
                 ),
                 new Triangle(
                 new Vector(1, 0, 0),
-                new Point(1, 0, 0),
-                new Point(1, 1, 0),
-                new Point(1, 0, 1)
+                new Point(1000, 0, 0),
+                new Point(1000, 1000, 0),
+                new Point(1000, 0, 1000)
                 )};
 
             var stl = new MiliaStl();

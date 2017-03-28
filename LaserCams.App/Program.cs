@@ -12,7 +12,7 @@ namespace LaserCams.App
             {
                 ACamPath = @"C:\Output\aCam.stl",
                 BCamPath = @"C:\Output\bCam.stl",
-                InputPath = @"C:\Dropbox\projects\LaserCams\LaserCams.Tests\Files\star cams.csv",
+                InputPath = @"C:\Dropbox\3dprint\laser\cam design\star cams.csv",
             });
             camCreator.CreateCams();
             Console.WriteLine("Completed. Any key to exit.");
