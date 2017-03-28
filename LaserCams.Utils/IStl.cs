@@ -5,5 +5,6 @@ namespace LaserCams.Utils
     public interface IStl
     {
         void Write(List<Triangle> triangles, string path);
+        List<Triangle> Read(string path);
     }
 }

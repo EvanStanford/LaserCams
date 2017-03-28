@@ -1,10 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace LaserCams.Utils
 {
     public class TriangleConverter : ITriangleConverter
     {
-        public IEnumerable<Triangle> Convert(List<Point> points)
+        public IEnumerable<Triangle> Convert(List<Point> points, CamCenter camCenter)
         {
             for (int i = 0; i < points.Count; i++)
             {
@@ -16,5 +17,14 @@ namespace LaserCams.Utils
                         points[(i + 1) % points.Count]);
             }
         }
+    }
+
+    public class CamCenter
+    {
+        public float Top { get; set; }
+        public float Bottom { get; set; }
+        public Point2d Center { get; set; }
+        public List<Point2d> Ring { get; set; }
+            
     }
 }
