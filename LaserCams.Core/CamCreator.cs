@@ -22,10 +22,8 @@ namespace LaserCams.Core
         public void CreateCams()
         {
             var input = _reader.Read(_config.InputPath);
-            var aCamPoints = input.Item1;
-            var bCamPoints = input.Item2;
-            var aCamTriangles = _triangleConverter.Convert(aCamPoints).ToList();
-            var bCamTriangles = _triangleConverter.Convert(bCamPoints).ToList();
+            var aCamTriangles = _triangleConverter.Convert(input.ACam).ToList();
+            var bCamTriangles = _triangleConverter.Convert(input.BCam).ToList();
             _writer.Write(aCamTriangles, _config.ACamPath);
             _writer.Write(bCamTriangles, _config.BCamPath);
         }
